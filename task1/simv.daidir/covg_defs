@@ -1,0 +1,99 @@
+global coverage_group 0 0 alu_test::ALU_CG __coverage_ALU_CG unused_ALU_CG_loop_label alu_test 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 0 47 /home/Yasir_Alqulayti/DV/lab6/task1/alu_test.sv
+ 50 0 0 0 0 0 0 0 0  1
+0
+26
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+3
+0
+0
+0
+ 6 op1_cp 53 0 0 0 0 0 0 26 ALU_CG::alu_test_ALU_CG_fn 26 ALU_CG::alu_test_ALU_CG_fn 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 32 0 0 0 0 2 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 9 low_range 54 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 28 ALU_CG::alu_test_ALU_CG_fn_0 0 28 ALU_CG::alu_test_ALU_CG_fn_1 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 high_range 55 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 28 ALU_CG::alu_test_ALU_CG_fn_2 0 28 ALU_CG::alu_test_ALU_CG_fn_3 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 11 default_bin 56 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0 0
+
+ 6 op2_cp 60 0 0 0 0 0 0 28 ALU_CG::alu_test_ALU_CG_fn_4 28 ALU_CG::alu_test_ALU_CG_fn_4 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 32 0 0 0 0 2 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 9 low_range 61 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 28 ALU_CG::alu_test_ALU_CG_fn_0 0 28 ALU_CG::alu_test_ALU_CG_fn_1 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 10 high_range 62 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 28 ALU_CG::alu_test_ALU_CG_fn_2 0 28 ALU_CG::alu_test_ALU_CG_fn_3 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 11 default_bin 63 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0 0
+
+ 11 alu_ctrl_cp 66 0 0 0 0 0 0 28 ALU_CG::alu_test_ALU_CG_fn_5 28 ALU_CG::alu_test_ALU_CG_fn_5 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 -1 2 4 0 0 0 0 2 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+end_coverage_group

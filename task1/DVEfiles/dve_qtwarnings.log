@@ -1,0 +1,10 @@
+QWarning: QString::arg(): Argument missing: .50.50.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .53.53.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .60.60.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .66.66.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .50.50.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .53.53.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .60.60.-1.-1.%, 0
+QWarning: QString::arg(): Argument missing: .66.66.-1.-1.%, 0
+QWarning: QGArray::at: Absolute index 12 out of range
+QWarning: QMetaObjectCleanUp::setMetaObject: Double use of QMetaObjectCleanUp!
