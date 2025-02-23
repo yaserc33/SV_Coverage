@@ -45,25 +45,36 @@ module alu_test(
 
   endtask
 
-
- // Declare Covergroup inside the module
+// Declare Covergroup inside the module
   covergroup ALU_CG @(posedge clk);
-    
+    option.per_instance = 1;
     // Coverpoint for op1
-    op1_cp: coverpoint op1 {
+   coverpoint alu_result {
+      bins zero = {0}; 
       bins low_range = {[32'h00000000: 32'h000000FF]};  // Covers low range
       bins high_range = {[32'hFFFFFF00: 32'hFFFFFFFF]}; // Covers high range
       bins default_bin = default;                     // Covers all other values
     }
-
-    // Coverpoint for op2
-    op2_cp: coverpoint op2 {
+    
+    
+   	 coverpoint op1 {
       bins low_range = {[32'h00000000: 32'h000000FF]};  // Covers low range
       bins high_range = {[32'hFFFFFF00: 32'hFFFFFFFF]}; // Covers high range
-      bins default_bin = default; 
     }
 
-    alu_ctrl_cp: coverpoint alu_ctrl; 
+     
+    coverpoint op2 {
+      bins low_range = {[32'h00000000: 32'h000000FF]};  // Covers low range
+      bins high_range = {[32'hFFFFFF00: 32'hFFFFFFFF]}; // Covers high range
+    }
+
+
+  
+
+    coverpoint alu_ctrl; 
+    
+    cross alu_ctrl , op1,op2; 
+    cross alu_ctrl , alu_result;
 
   endgroup  
 
@@ -77,16 +88,21 @@ module alu_test(
     randtrans rtrans;
     ALU_CG alu_coverage = new();
 
+  
+  
+  
+  
     // Test Cases Here 
     initial begin 
         rtrans = new();
-        repeat(200) begin 
+      repeat(500) begin 
             ok = rtrans.randomize() with {
                 a inside {[0:255], [32'hFFFFFF00: 32'hFFFFFFFF]};
                 b inside {[0:255], [32'hFFFFFF00: 32'hFFFFFFFF]};
             };
             drive_and_capture($urandom_range(0,15), rtrans.a, rtrans.b, rtrans.opcode, test_zero, debug);
         end
+
         printstatus(0); // currently not checking the alu, only generating the stimulus
         $finish;
     end
